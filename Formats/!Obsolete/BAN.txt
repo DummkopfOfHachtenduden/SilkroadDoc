@@ -1,0 +1,21 @@
+42 41 4E 20                      -> FileFormat
+65 00 00 00                      -> Version
+0A 00 00 00                      -> Name.Length
+6D 6F 62 5F 73 65 6C 65 63 74 00 -> Name = mob_select
+E8 03 00 00                      -> Duration
+1E 00 00 00                      -> FramesPerSecond
+01 00 00 00                      -> IsContinuous
+03 00 00 00                      -> animatedBoneCount
+    06 00 00 00                      -> BoneName.Length
+    42 6F 6E 65 30 31 00             -> BoneName = Bone01
+    02 00 00 00                      -> keyframeCount
+        00 00 00 00                      -> RotationTime
+        00 00 00 00                      -> TranslationTime
+        00 00 00 BF                      -> Rotation.X
+        00 00 00 BF                      -> Rotation.Y
+        00 00 00 3F                      -> Rotation.Z
+        00 00 00 3F                      -> Rotation.W
+        80 91 29 3D                      -> Translation.X
+        F0 BC 27 C0                      -> Translation.Y
+        F0 05 F6 33                      -> Translation.Z
+...

@@ -1,0 +1,75 @@
+[12 byte] header 
+[04 byte] bmtIndex
+[04 byte] bmsIndex
+[04 byte] bskIndex
+[04 byte] banIndex
+[04 byte] defaultIndex 
+[04 byte] defaultIndex
+[04 byte] ambientIndex
+[04 byte] bmsRootIndex
+[04 byte] bmsExtraType
+[04 byte] unkIndex4
+[04 byte] unkIndex5
+[04 byte] unkIndex6
+[04 byte] unkIndex7
+[04 byte] bsrType
+[04 byte] bsrNameLenght
+[STRING]  bsrName
+[04 byte] unk01
+[04 byte] unk02
+[04 byte] unk03
+[04 byte] unk04
+[04 byte] unk05
+[04 byte] unk06
+[04 byte] unk07
+[04 byte] unk08
+[04 byte] unk09
+[04 byte] unk10
+[04 byte] unk11
+[04 byte] unk12
+
+//bmsRootIndex
+[04 byte] bmsRootLenght
+[STRING]  bmsRoot
+
+//AABB (axis-aligned bounding boxes)
+{
+    [04 byte] X1    
+    [04 byte] Z1 
+    [04 byte] Y1    
+    [04 byte] X2 //width = X2 - X1  
+    [04 byte] Z2 //height = Z2 - Z1
+    [04 byte] Y3 //length = Y2 - Y1
+}
+
+//bmtIndex
+[04 byte] unk_bmtInt
+[04 byte] bmtEntryLenght
+[STRING ] bmtEntry
+
+//bmsIndex
+[04 byte] bmsFileCount
+{
+    [04 byte] bmsEntryLenght
+    [STRING] bmsEntry
+        if(bmsExtra == 1) 
+            [04 byte] bmsExtraValue
+}
+
+//banIndex
+[04 byte] unkInt2
+[04 byte] unkInt3
+[04 byte] banFileCount
+{
+    [04 byte] banEntryLenght
+    [STRING ] banEntry
+}
+
+//bskFile
+[04 byte] bskFileCount
+{
+    [04 byte] bskEntryLenght
+    [STIRNG]  bskEntry
+}
+
+// -- Skipped from here, nothing of interest --
