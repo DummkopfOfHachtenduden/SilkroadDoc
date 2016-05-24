@@ -1,8 +1,8 @@
-# Silkroad
+#[Silkroad Developer Wiki](https://github.com/DummkopfOfHachtenduden/Silkroad/wiki)
 
 File formats and packets documented by DummkopfOfHachtenduden ([DaxterSoul](http://www.elitepvpers.com/forum/members/1084164-daxtersoul.html)) 
 
-All formats and packets analyzed are gathered from Silkroad Online (vSRO 1.88), when using a different version you might experience changes in structures.
+All formats and packets analyzed are gathered from Silkroad Online (vSRO 1.88), when using a different version you might experience changes in structures. 
 
 ## Contributing
 If you want to constribute (against all odds in this community) make a pull request.
