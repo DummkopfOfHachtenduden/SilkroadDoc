@@ -1,7 +1,7 @@
 12  char[]  Header          //JMXVNVM 1000
 
 //NavigationEntries
-4   uint    entryCount
+2   ushort    entryCount
 for (int entryIndex = 0; entryIndex < entryCount; entryIndex++)
 {
     4   uint    ID
