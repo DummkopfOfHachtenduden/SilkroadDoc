@@ -1,0 +1,6 @@
+[S->C] [10] [0x2005] 
+01 00                   Type    // 01 00 = NodeState, 02 00 = LinkState
+01                              // count of nodes changing?
+BA 02                   ID      // NodeID or LinkID depending on type.
+04 00 00 00             State   // 4 = Not in Service, 5 = Service
+02                              // connected to last byte in 0x6005?
