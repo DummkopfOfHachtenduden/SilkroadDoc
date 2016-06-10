@@ -5,7 +5,7 @@ File formats and packets documented by DummkopfOfHachtenduden ([DaxterSoul](http
 All formats and packets analyzed are gathered from Silkroad Online (vSRO 1.88), when using a different version you might experience changes in structures. 
 
 ## Contributing
-If you want to constribute (against all odds in this community) make a pull request.
+If you want to contribute make a pull request.
 
 ## Questions & Discussions
 If you have questions or want to discuss a packet or file format [message me  on elitepvpers](http://www.elitepvpers.com/forum/private.php?do=newpm&u=1084164). 
