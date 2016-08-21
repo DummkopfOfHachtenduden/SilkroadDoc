@@ -1,5 +1,5 @@
 //Encrypted
-1   byte    Locale
-2   ushort  ServiceName.Length
-*   string  ServiceName
+1   byte    Content.ID
+2   ushort  Module.Name.Length
+*   string  Module.Name
 4   uint    Version

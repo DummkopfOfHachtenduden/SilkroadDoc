@@ -1,1 +1,1 @@
-1   byte    OperationType
+1   byte    Content.ID
