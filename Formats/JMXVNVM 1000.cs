@@ -1,4 +1,4 @@
-    2   ushort  EventZoneFlag   //0 = No, 256 = collision works when your character has CTF suit (red/blue ones)12  char[]  Header          //JMXVNVM 1000
+12  char[]  Header          //JMXVNVM 1000
 
 //NavigationEntries
 2   ushort    entryCount
