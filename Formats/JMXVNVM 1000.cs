@@ -10,7 +10,7 @@ for (int entryIndex = 0; entryIndex < entryCount; entryIndex++)
     4   float   Yaw 
     2   ushort  UniqueID
     2   ushort  unkUShort0      //
-    2   ushort  unkUShort1      //
+    2   ushort  EventZoneFlag   //0 = No, 256 = collision works when your character has CTF suit (red/blue ones)
     2   ushort  RegionID
     2   ushort  mountPointCount
     for (int i = 0; i < mountPointCount; i++)
