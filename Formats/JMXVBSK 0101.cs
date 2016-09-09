@@ -7,15 +7,15 @@ for (int boneIndex = 0; boneIndex < boneCount; boneIndex++)
         4   uint    relatedBoneCount                        //Number of bones with same parent bone. Bone itself included
         for (int ii = 0; ii < relatedBoneCount; ii++)
         {
-            2   ushort  relatedBone.Name.Length
+            4   uint  relatedBone.Name.Length
             *   string  relatedBone.Name
         }        
     }    
 
     1   byte    unkByte0
-    2   ushort  Bone.Name.Length    
+    4   uint  Bone.Name.Length    
     *   string  Bone.Name
-    2   ushort  ParentBone.Name.Length
+    4   uint  ParentBone.Name.Length
     *   string  ParentBone.Name
 
     //Vector4
