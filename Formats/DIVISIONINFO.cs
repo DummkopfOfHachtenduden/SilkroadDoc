@@ -9,8 +9,8 @@ foreach(Division)
     1   byte    Division.GatewayCount
     foreach(Gateway)
     {
-        4   uint    IP.Length
-        *   string  IP
+        4   uint    Host.Length
+        *   string  Host
         1   byte    nullTerminator  //0
     }
 }
