@@ -15,13 +15,13 @@ public enum PatchErrorCode : byte
     /// UILM_MSG_GATEWAY_NOT_IN_SERVICE
     /// <para>The server is undergoing inspection or updates. Connect to %swww.silkroadonline.net for more information.</para>
     /// </summary>
-    NotInService = 3,
+    NotInService = 4,
 
     /// <summary>
     /// UILM_MSG_DETECTED_ABNORMAL_MODULE
     /// <para>Invalid client. Program will be terminated.</para>
     /// </summary>
-    AbnormalModule = 4,
+    AbnormalModule = 3,
 
     /// <summary>
     /// UILM_MSG_DETECTED_PATCH_DIABLE
