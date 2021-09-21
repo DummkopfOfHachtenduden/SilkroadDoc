@@ -1,3 +1,4 @@
+// Massive
 1   byte    noticeCount
 foreach(notice)
 {
