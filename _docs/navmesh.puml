@@ -1,0 +1,107 @@
+@startuml navmesh
+
+hide empty members
+
+class NavmeshTerrain {
+    heights: []float32
+    tiles: []NavmeshTerrainTile
+    cells: []NavmeshTerrainCell
+    globalEdges: []NavmeshEdgeGlobal
+    internalEdges: []NavmeshEdgeInternal
+    objects: []NavmeshObjectInstance
+}
+
+class NavmeshTerrainCell {
+    index: int
+    objects: []NavmeshObjectInstance
+}
+
+class NavmeshTerrainTile {
+    cellIndex: int
+    flag: ushort
+    textureId: short
+}
+
+enum NavmeshEdgeType {
+    GLOBAL
+    INTERNAL
+}
+
+enum NavmeshEdgeMeshType {
+    TERRAIN
+    OBJECT
+}
+
+class NavmeshEdge {
+    type: NavmeshEdgeType
+    meshType: NavmeshEdgeMeshType
+    sourceCellIndex: short
+    destinationCellIndex: short
+    sourceDirection: byte // not set for objects
+    destinationDirection: byte // not set for objects
+    sourceMeshIndex: short // not set for objects
+    destinationMeshIndex: short // not set for objects
+    flag: byte
+}
+
+class NavmeshObject {
+    cells: []NavmeshTerrainCell
+    globalEdges: []NavmeshEdgeGlobal
+    internalEdges: []NavmeshEdgeInternal
+    events: []string
+    grid: NavmeshObjectGrid
+}
+
+class NavmeshObjectInstance {
+    terrain: NavmeshTerrain
+    object: NavmeshObject
+    id: int
+    position: Vector3
+    rotation: Quaternion
+    scale: Vector3
+    localToWorld: Matrix4
+    worldToLocal: Matrix4
+    linkedObjectInstances: []NavmeshObjectInstance
+}
+
+class NavmeshObjectGrid {
+    object: NavmeshObject
+    tiles: []NavmeshObjectGridTile
+    x: float32
+    y: float32
+    width: int // number of X Tiles
+    height: int // number of Z Tiles
+}
+
+class NavmeshObjectGridTile {
+    globalEdges: []NavmeshEdgeGlobal
+}
+
+class NavmeshObjectCell {
+    index: int
+    triangle: Triangle
+    flag: short
+    eventZone: byte
+}
+
+' Terrain
+
+NavmeshTerrain --{ NavmeshTerrainCell
+NavmeshTerrain --{ NavmeshTerrainTile
+NavmeshTerrain --{ NavmeshEdge
+NavmeshTerrain -right-{ NavmeshObjectInstance
+NavmeshTerrainCell --{ NavmeshTerrainTile
+
+' Object
+
+NavmeshObject -left-{ NavmeshObjectInstance
+NavmeshObject --{ NavmeshObjectCell
+NavmeshObject -- NavmeshObjectGrid
+NavmeshObject --{ NavmeshEdge
+NavmeshObjectGrid --{ NavmeshObjectGridTile
+NavmeshObjectGridTile --{ NavmeshEdge
+
+NavmeshEdge -- NavmeshEdgeType
+NavmeshEdge -- NavmeshEdgeMeshType
+
+@enduml

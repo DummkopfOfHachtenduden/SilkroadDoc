@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="863px" preserveAspectRatio="none" style="width:853px;height:863px;background:#FFFFFF;" version="1.1" viewBox="0 0 853 863" width="853px" zoomAndPan="magnify"><defs><filter height="300%" id="f1jos8ukd2n73v" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ce781d28ba132a2fd702070fc8bd0252]
+class NavmeshTerrain--><rect codeLine="4" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="123.0156" id="NavmeshTerrain" style="stroke:#A80036;stroke-width:1.5;" width="193" x="68.5" y="28"/><ellipse cx="114.75" cy="44" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M116.75,40.5 Q116.9531,40 117.1875,39.75 Q117.4219,39.5 117.6875,39.5 Q118.1563,39.5 118.4531,39.7813 Q118.75,40.0625 118.75,40.7188 L118.75,42.2813 Q118.75,42.9375 118.4688,43.2188 Q118.1875,43.5 117.75,43.5 Q117.3594,43.5 117.1094,43.3281 Q116.8594,43.1563 116.75,42.7031 Q116.7031,42.3906 116.5313,42.2188 Q116.2188,41.8906 115.6563,41.7031 Q115.0938,41.5 114.5313,41.5 Q113.8281,41.5 113.2344,41.7813 Q112.6563,42.0625 112.2031,42.6875 Q111.75,43.3125 111.75,44.1719 L111.75,45.0938 Q111.75,46.125 112.5938,46.8125 Q113.4375,47.5 114.9375,47.5 Q115.8281,47.5 116.4531,47.2969 Q116.8125,47.1875 117.2188,46.8281 Q117.4844,46.625 117.625,46.5625 Q117.7656,46.5 117.9375,46.5 Q118.2656,46.5 118.5,46.7656 Q118.75,47.0156 118.75,47.375 Q118.75,47.7188 118.4063,48.125 Q117.9063,48.7188 117.1094,49.0469 Q116.0625,49.5 114.7813,49.5 Q113.2813,49.5 112.0781,48.9063 Q111.1094,48.4375 110.4219,47.4219 Q109.75,46.4063 109.75,45.2031 L109.75,44.1094 Q109.75,42.8594 110.3438,41.7656 Q110.9531,40.6719 112,40.0938 Q113.0625,39.5 114.25,39.5 Q114.9688,39.5 115.5938,39.75 Q116.2188,40 116.75,40.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92" x="135.25" y="48.9102">NavmeshTerrain</text><line style="stroke:#A80036;stroke-width:1.5;" x1="69.5" x2="260.5" y1="60" y2="60"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="74.5" y="75.4189">heights: []float32</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="74.5" y="89.2549">tiles: []NavmeshTerrainTile</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="74.5" y="103.0908">cells: []NavmeshTerrainCell</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="74.5" y="116.9268">globalEdges: []NavmeshEdgeGlobal</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="181" x="74.5" y="130.7627">internalEdges: []NavmeshEdgeInternal</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="164" x="74.5" y="144.5986">objects: []NavmeshObjectInstance</text><!--MD5=[8fad0efd960f15984ffa7372caf59c30]
+class NavmeshTerrainCell--><rect codeLine="13" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="67.6719" id="NavmeshTerrainCell" style="stroke:#A80036;stroke-width:1.5;" width="176" x="7" y="259.5"/><ellipse cx="35.5" cy="275.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M37.5,272 Q37.7031,271.5 37.9375,271.25 Q38.1719,271 38.4375,271 Q38.9063,271 39.2031,271.2813 Q39.5,271.5625 39.5,272.2188 L39.5,273.7813 Q39.5,274.4375 39.2188,274.7188 Q38.9375,275 38.5,275 Q38.1094,275 37.8594,274.8281 Q37.6094,274.6563 37.5,274.2031 Q37.4531,273.8906 37.2813,273.7188 Q36.9688,273.3906 36.4063,273.2031 Q35.8438,273 35.2813,273 Q34.5781,273 33.9844,273.2813 Q33.4063,273.5625 32.9531,274.1875 Q32.5,274.8125 32.5,275.6719 L32.5,276.5938 Q32.5,277.625 33.3438,278.3125 Q34.1875,279 35.6875,279 Q36.5781,279 37.2031,278.7969 Q37.5625,278.6875 37.9688,278.3281 Q38.2344,278.125 38.375,278.0625 Q38.5156,278 38.6875,278 Q39.0156,278 39.25,278.2656 Q39.5,278.5156 39.5,278.875 Q39.5,279.2188 39.1563,279.625 Q38.6563,280.2188 37.8594,280.5469 Q36.8125,281 35.5313,281 Q34.0313,281 32.8281,280.4063 Q31.8594,279.9375 31.1719,278.9219 Q30.5,277.9063 30.5,276.7031 L30.5,275.6094 Q30.5,274.3594 31.0938,273.2656 Q31.7031,272.1719 32.75,271.5938 Q33.8125,271 35,271 Q35.7188,271 36.3438,271.25 Q36.9688,271.5 37.5,272 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="114" x="52.5" y="280.4102">NavmeshTerrainCell</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="182" y1="291.5" y2="291.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="43" x="13" y="306.9189">index: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="164" x="13" y="320.7549">objects: []NavmeshObjectInstance</text><!--MD5=[ff6002dd4c26add8ffa666cf53f461fe]
+class NavmeshTerrainTile--><rect codeLine="18" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="81.5078" id="NavmeshTerrainTile" style="stroke:#A80036;stroke-width:1.5;" width="144" x="66" y="415"/><ellipse cx="81" cy="431" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M83,427.5 Q83.2031,427 83.4375,426.75 Q83.6719,426.5 83.9375,426.5 Q84.4063,426.5 84.7031,426.7813 Q85,427.0625 85,427.7188 L85,429.2813 Q85,429.9375 84.7188,430.2188 Q84.4375,430.5 84,430.5 Q83.6094,430.5 83.3594,430.3281 Q83.1094,430.1563 83,429.7031 Q82.9531,429.3906 82.7813,429.2188 Q82.4688,428.8906 81.9063,428.7031 Q81.3438,428.5 80.7813,428.5 Q80.0781,428.5 79.4844,428.7813 Q78.9063,429.0625 78.4531,429.6875 Q78,430.3125 78,431.1719 L78,432.0938 Q78,433.125 78.8438,433.8125 Q79.6875,434.5 81.1875,434.5 Q82.0781,434.5 82.7031,434.2969 Q83.0625,434.1875 83.4688,433.8281 Q83.7344,433.625 83.875,433.5625 Q84.0156,433.5 84.1875,433.5 Q84.5156,433.5 84.75,433.7656 Q85,434.0156 85,434.375 Q85,434.7188 84.6563,435.125 Q84.1563,435.7188 83.3594,436.0469 Q82.3125,436.5 81.0313,436.5 Q79.5313,436.5 78.3281,435.9063 Q77.3594,435.4375 76.6719,434.4219 Q76,433.4063 76,432.2031 L76,431.1094 Q76,429.8594 76.5938,428.7656 Q77.2031,427.6719 78.25,427.0938 Q79.3125,426.5 80.5,426.5 Q81.2188,426.5 81.8438,426.75 Q82.4688,427 83,427.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="112" x="95" y="435.9102">NavmeshTerrainTile</text><line style="stroke:#A80036;stroke-width:1.5;" x1="67" x2="209" y1="447" y2="447"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="72" y="462.4189">cellIndex: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="72" y="476.2549">flag: ushort</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="72" y="490.0908">textureId: short</text><!--MD5=[06019fb40b11b223ccaf7fc6fcc6cc22]
+class NavmeshEdgeType--><rect codeLine="24" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="67.6719" id="NavmeshEdgeType" style="stroke:#A80036;stroke-width:1.5;" width="140" x="275" y="782"/><ellipse cx="290" cy="798" fill="#EB937F" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M288.5,799 L288.5,801 L292.5,801 L292.5,800 L292.5,799.5156 L293.125,799 L293.5,799 L293.875,799 L294.5,799.5156 L294.5,800 L294.5,803 L286.5,803 L286.0156,803 L285.5,802.375 L285.5,802 L285.5,801.625 L286.0156,801 L286.5,801 L286.5,801 L286.5,795 L286.5,795 L286.0156,795 L285.5,794.375 L285.5,794 L285.5,793.625 L286.0156,793 L286.5,793 L294.5,793 L294.5,796 L294.5,796.4844 L293.875,797 L293.5,797 L293.125,797 L292.5,796.4844 L292.5,796 L292.5,795 L288.5,795 L288.5,797 L289.5,797 L289.5,796.5156 L289.5,796.5156 L290.125,796 L290.5,796 L290.875,796 L291.5,796.5156 L291.5,797 L291.5,799 L291.5,799.4844 L290.875,800 L290.875,800 L290.5,800 L290.125,800 L289.5,799.4844 L289.5,799.4844 L289.5,799 L288.5,799 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="304" y="802.9102">NavmeshEdgeType</text><line style="stroke:#A80036;stroke-width:1.5;" x1="276" x2="414" y1="814" y2="814"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="43" x="281" y="829.4189">GLOBAL</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="281" y="843.2549">INTERNAL</text><!--MD5=[66c03ef431348c8d865ad2c5a6fc6089]
+class NavmeshEdgeMeshType--><rect codeLine="29" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="67.6719" id="NavmeshEdgeMeshType" style="stroke:#A80036;stroke-width:1.5;" width="170" x="450" y="782"/><ellipse cx="465" cy="798" fill="#EB937F" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M463.5,799 L463.5,801 L467.5,801 L467.5,800 L467.5,799.5156 L468.125,799 L468.5,799 L468.875,799 L469.5,799.5156 L469.5,800 L469.5,803 L461.5,803 L461.0156,803 L460.5,802.375 L460.5,802 L460.5,801.625 L461.0156,801 L461.5,801 L461.5,801 L461.5,795 L461.5,795 L461.0156,795 L460.5,794.375 L460.5,794 L460.5,793.625 L461.0156,793 L461.5,793 L469.5,793 L469.5,796 L469.5,796.4844 L468.875,797 L468.5,797 L468.125,797 L467.5,796.4844 L467.5,796 L467.5,795 L463.5,795 L463.5,797 L464.5,797 L464.5,796.5156 L464.5,796.5156 L465.125,796 L465.5,796 L465.875,796 L466.5,796.5156 L466.5,797 L466.5,799 L466.5,799.4844 L465.875,800 L465.875,800 L465.5,800 L465.125,800 L464.5,799.4844 L464.5,799.4844 L464.5,799 L463.5,799 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="138" x="479" y="802.9102">NavmeshEdgeMeshType</text><line style="stroke:#A80036;stroke-width:1.5;" x1="451" x2="619" y1="814" y2="814"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="43" x="456" y="829.4189">TERRAIN</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="39" x="456" y="843.2549">OBJECT</text><!--MD5=[7245e78ef295162201c6227352812551]
+class NavmeshEdge--><rect codeLine="34" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="164.5234" id="NavmeshEdge" style="stroke:#A80036;stroke-width:1.5;" width="247" x="316.5" y="557"/><ellipse cx="394.75" cy="573" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M396.75,569.5 Q396.9531,569 397.1875,568.75 Q397.4219,568.5 397.6875,568.5 Q398.1563,568.5 398.4531,568.7813 Q398.75,569.0625 398.75,569.7188 L398.75,571.2813 Q398.75,571.9375 398.4688,572.2188 Q398.1875,572.5 397.75,572.5 Q397.3594,572.5 397.1094,572.3281 Q396.8594,572.1563 396.75,571.7031 Q396.7031,571.3906 396.5313,571.2188 Q396.2188,570.8906 395.6563,570.7031 Q395.0938,570.5 394.5313,570.5 Q393.8281,570.5 393.2344,570.7813 Q392.6563,571.0625 392.2031,571.6875 Q391.75,572.3125 391.75,573.1719 L391.75,574.0938 Q391.75,575.125 392.5938,575.8125 Q393.4375,576.5 394.9375,576.5 Q395.8281,576.5 396.4531,576.2969 Q396.8125,576.1875 397.2188,575.8281 Q397.4844,575.625 397.625,575.5625 Q397.7656,575.5 397.9375,575.5 Q398.2656,575.5 398.5,575.7656 Q398.75,576.0156 398.75,576.375 Q398.75,576.7188 398.4063,577.125 Q397.9063,577.7188 397.1094,578.0469 Q396.0625,578.5 394.7813,578.5 Q393.2813,578.5 392.0781,577.9063 Q391.1094,577.4375 390.4219,576.4219 Q389.75,575.4063 389.75,574.2031 L389.75,573.1094 Q389.75,571.8594 390.3438,570.7656 Q390.9531,569.6719 392,569.0938 Q393.0625,568.5 394.25,568.5 Q394.9688,568.5 395.5938,568.75 Q396.2188,569 396.75,569.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="415.25" y="577.9102">NavmeshEdge</text><line style="stroke:#A80036;stroke-width:1.5;" x1="317.5" x2="562.5" y1="589" y2="589"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="322.5" y="604.4189">type: NavmeshEdgeType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="175" x="322.5" y="618.2549">meshType: NavmeshEdgeMeshType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="322.5" y="632.0908">sourceCellIndex: short</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="322.5" y="645.9268">destinationCellIndex: short</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="203" x="322.5" y="659.7627">sourceDirection: byte // not set for objects</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="221" x="322.5" y="673.5986">destinationDirection: byte // not set for objects</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="217" x="322.5" y="687.4346">sourceMeshIndex: short // not set for objects</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="322.5" y="701.2705">destinationMeshIndex: short // not set for objects</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45" x="322.5" y="715.1064">flag: byte</text><!--MD5=[20acd40244dd8e0228041742a0fb2139]
+class NavmeshObject--><rect codeLine="46" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="109.1797" id="NavmeshObject" style="stroke:#A80036;stroke-width:1.5;" width="193" x="578.5" y="35"/><ellipse cx="626.75" cy="51" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M628.75,47.5 Q628.9531,47 629.1875,46.75 Q629.4219,46.5 629.6875,46.5 Q630.1563,46.5 630.4531,46.7813 Q630.75,47.0625 630.75,47.7188 L630.75,49.2813 Q630.75,49.9375 630.4688,50.2188 Q630.1875,50.5 629.75,50.5 Q629.3594,50.5 629.1094,50.3281 Q628.8594,50.1563 628.75,49.7031 Q628.7031,49.3906 628.5313,49.2188 Q628.2188,48.8906 627.6563,48.7031 Q627.0938,48.5 626.5313,48.5 Q625.8281,48.5 625.2344,48.7813 Q624.6563,49.0625 624.2031,49.6875 Q623.75,50.3125 623.75,51.1719 L623.75,52.0938 Q623.75,53.125 624.5938,53.8125 Q625.4375,54.5 626.9375,54.5 Q627.8281,54.5 628.4531,54.2969 Q628.8125,54.1875 629.2188,53.8281 Q629.4844,53.625 629.625,53.5625 Q629.7656,53.5 629.9375,53.5 Q630.2656,53.5 630.5,53.7656 Q630.75,54.0156 630.75,54.375 Q630.75,54.7188 630.4063,55.125 Q629.9063,55.7188 629.1094,56.0469 Q628.0625,56.5 626.7813,56.5 Q625.2813,56.5 624.0781,55.9063 Q623.1094,55.4375 622.4219,54.4219 Q621.75,53.4063 621.75,52.2031 L621.75,51.1094 Q621.75,49.8594 622.3438,48.7656 Q622.9531,47.6719 624,47.0938 Q625.0625,46.5 626.25,46.5 Q626.9688,46.5 627.5938,46.75 Q628.2188,47 628.75,47.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="647.25" y="55.9102">NavmeshObject</text><line style="stroke:#A80036;stroke-width:1.5;" x1="579.5" x2="770.5" y1="67" y2="67"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="584.5" y="82.4189">cells: []NavmeshTerrainCell</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="584.5" y="96.2549">globalEdges: []NavmeshEdgeGlobal</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="181" x="584.5" y="110.0908">internalEdges: []NavmeshEdgeInternal</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="584.5" y="123.9268">events: []string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="584.5" y="137.7627">grid: NavmeshObjectGrid</text><!--MD5=[1abd8d662b3e23f2069afcd7d276b1b5]
+class NavmeshObjectInstance--><rect codeLine="54" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="164.5234" id="NavmeshObjectInstance" style="stroke:#A80036;stroke-width:1.5;" width="246" x="297" y="7"/><ellipse cx="348.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M350.25,19.5 Q350.4531,19 350.6875,18.75 Q350.9219,18.5 351.1875,18.5 Q351.6563,18.5 351.9531,18.7813 Q352.25,19.0625 352.25,19.7188 L352.25,21.2813 Q352.25,21.9375 351.9688,22.2188 Q351.6875,22.5 351.25,22.5 Q350.8594,22.5 350.6094,22.3281 Q350.3594,22.1563 350.25,21.7031 Q350.2031,21.3906 350.0313,21.2188 Q349.7188,20.8906 349.1563,20.7031 Q348.5938,20.5 348.0313,20.5 Q347.3281,20.5 346.7344,20.7813 Q346.1563,21.0625 345.7031,21.6875 Q345.25,22.3125 345.25,23.1719 L345.25,24.0938 Q345.25,25.125 346.0938,25.8125 Q346.9375,26.5 348.4375,26.5 Q349.3281,26.5 349.9531,26.2969 Q350.3125,26.1875 350.7188,25.8281 Q350.9844,25.625 351.125,25.5625 Q351.2656,25.5 351.4375,25.5 Q351.7656,25.5 352,25.7656 Q352.25,26.0156 352.25,26.375 Q352.25,26.7188 351.9063,27.125 Q351.4063,27.7188 350.6094,28.0469 Q349.5625,28.5 348.2813,28.5 Q346.7813,28.5 345.5781,27.9063 Q344.6094,27.4375 343.9219,26.4219 Q343.25,25.4063 343.25,24.2031 L343.25,23.1094 Q343.25,21.8594 343.8438,20.7656 Q344.4531,19.6719 345.5,19.0938 Q346.5625,18.5 347.75,18.5 Q348.4688,18.5 349.0938,18.75 Q349.7188,19 350.25,19.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="135" x="368.75" y="27.9102">NavmeshObjectInstance</text><line style="stroke:#A80036;stroke-width:1.5;" x1="298" x2="542" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="303" y="54.4189">terrain: NavmeshTerrain</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="303" y="68.2549">object: NavmeshObject</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="303" y="82.0908">id: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="303" y="95.9268">position: Vector3</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="303" y="109.7627">rotation: Quaternion</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="303" y="123.5986">scale: Vector3</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="303" y="137.4346">localToWorld: Matrix4</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="303" y="151.2705">worldToLocal: Matrix4</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="234" x="303" y="165.1064">linkedObjectInstances: []NavmeshObjectInstance</text><!--MD5=[526e80b54abad82383a7639160348cf5]
+class NavmeshObjectGrid--><rect codeLine="66" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="123.0156" id="NavmeshObjectGrid" style="stroke:#A80036;stroke-width:1.5;" width="155" x="506.5" y="232"/><ellipse cx="526.9" cy="248" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M528.9,244.5 Q529.1031,244 529.3375,243.75 Q529.5719,243.5 529.8375,243.5 Q530.3063,243.5 530.6031,243.7813 Q530.9,244.0625 530.9,244.7188 L530.9,246.2813 Q530.9,246.9375 530.6188,247.2188 Q530.3375,247.5 529.9,247.5 Q529.5094,247.5 529.2594,247.3281 Q529.0094,247.1563 528.9,246.7031 Q528.8531,246.3906 528.6813,246.2188 Q528.3688,245.8906 527.8063,245.7031 Q527.2438,245.5 526.6813,245.5 Q525.9781,245.5 525.3844,245.7813 Q524.8063,246.0625 524.3531,246.6875 Q523.9,247.3125 523.9,248.1719 L523.9,249.0938 Q523.9,250.125 524.7438,250.8125 Q525.5875,251.5 527.0875,251.5 Q527.9781,251.5 528.6031,251.2969 Q528.9625,251.1875 529.3688,250.8281 Q529.6344,250.625 529.775,250.5625 Q529.9156,250.5 530.0875,250.5 Q530.4156,250.5 530.65,250.7656 Q530.9,251.0156 530.9,251.375 Q530.9,251.7188 530.5563,252.125 Q530.0563,252.7188 529.2594,253.0469 Q528.2125,253.5 526.9313,253.5 Q525.4313,253.5 524.2281,252.9063 Q523.2594,252.4375 522.5719,251.4219 Q521.9,250.4063 521.9,249.2031 L521.9,248.1094 Q521.9,246.8594 522.4938,245.7656 Q523.1031,244.6719 524.15,244.0938 Q525.2125,243.5 526.4,243.5 Q527.1188,243.5 527.7438,243.75 Q528.3688,244 528.9,244.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="111" x="542.1" y="252.9102">NavmeshObjectGrid</text><line style="stroke:#A80036;stroke-width:1.5;" x1="507.5" x2="660.5" y1="264" y2="264"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="512.5" y="279.4189">object: NavmeshObject</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="512.5" y="293.2549">tiles: []NavmeshObjectGridTile</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45" x="512.5" y="307.0908">x: float32</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45" x="512.5" y="320.9268">y: float32</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="512.5" y="334.7627">width: int // number of X Tiles</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="512.5" y="348.5986">height: int // number of Z Tiles</text><!--MD5=[2b91a91783679bc8e9b34c97a2f2019d]
+class NavmeshObjectGridTile--><rect codeLine="75" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="53.8359" id="NavmeshObjectGridTile" style="stroke:#A80036;stroke-width:1.5;" width="181" x="493.5" y="429"/><ellipse cx="516.6" cy="445" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M518.6,441.5 Q518.8031,441 519.0375,440.75 Q519.2719,440.5 519.5375,440.5 Q520.0063,440.5 520.3031,440.7813 Q520.6,441.0625 520.6,441.7188 L520.6,443.2813 Q520.6,443.9375 520.3188,444.2188 Q520.0375,444.5 519.6,444.5 Q519.2094,444.5 518.9594,444.3281 Q518.7094,444.1563 518.6,443.7031 Q518.5531,443.3906 518.3813,443.2188 Q518.0688,442.8906 517.5063,442.7031 Q516.9438,442.5 516.3813,442.5 Q515.6781,442.5 515.0844,442.7813 Q514.5063,443.0625 514.0531,443.6875 Q513.6,444.3125 513.6,445.1719 L513.6,446.0938 Q513.6,447.125 514.4438,447.8125 Q515.2875,448.5 516.7875,448.5 Q517.6781,448.5 518.3031,448.2969 Q518.6625,448.1875 519.0688,447.8281 Q519.3344,447.625 519.475,447.5625 Q519.6156,447.5 519.7875,447.5 Q520.1156,447.5 520.35,447.7656 Q520.6,448.0156 520.6,448.375 Q520.6,448.7188 520.2563,449.125 Q519.7563,449.7188 518.9594,450.0469 Q517.9125,450.5 516.6313,450.5 Q515.1313,450.5 513.9281,449.9063 Q512.9594,449.4375 512.2719,448.4219 Q511.6,447.4063 511.6,446.2031 L511.6,445.1094 Q511.6,443.8594 512.1938,442.7656 Q512.8031,441.6719 513.85,441.0938 Q514.9125,440.5 516.1,440.5 Q516.8188,440.5 517.4438,440.75 Q518.0688,441 518.6,441.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="131" x="532.4" y="449.9102">NavmeshObjectGridTile</text><line style="stroke:#A80036;stroke-width:1.5;" x1="494.5" x2="673.5" y1="461" y2="461"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="499.5" y="476.4189">globalEdges: []NavmeshEdgeGlobal</text><!--MD5=[0305e403db5a231f2511a099e791313a]
+class NavmeshObjectCell--><rect codeLine="79" fill="#FEFECE" filter="url(#f1jos8ukd2n73v)" height="95.3438" id="NavmeshObjectCell" style="stroke:#A80036;stroke-width:1.5;" width="142" x="697" y="246"/><ellipse cx="712" cy="262" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M714,258.5 Q714.2031,258 714.4375,257.75 Q714.6719,257.5 714.9375,257.5 Q715.4063,257.5 715.7031,257.7813 Q716,258.0625 716,258.7188 L716,260.2813 Q716,260.9375 715.7188,261.2188 Q715.4375,261.5 715,261.5 Q714.6094,261.5 714.3594,261.3281 Q714.1094,261.1563 714,260.7031 Q713.9531,260.3906 713.7813,260.2188 Q713.4688,259.8906 712.9063,259.7031 Q712.3438,259.5 711.7813,259.5 Q711.0781,259.5 710.4844,259.7813 Q709.9063,260.0625 709.4531,260.6875 Q709,261.3125 709,262.1719 L709,263.0938 Q709,264.125 709.8438,264.8125 Q710.6875,265.5 712.1875,265.5 Q713.0781,265.5 713.7031,265.2969 Q714.0625,265.1875 714.4688,264.8281 Q714.7344,264.625 714.875,264.5625 Q715.0156,264.5 715.1875,264.5 Q715.5156,264.5 715.75,264.7656 Q716,265.0156 716,265.375 Q716,265.7188 715.6563,266.125 Q715.1563,266.7188 714.3594,267.0469 Q713.3125,267.5 712.0313,267.5 Q710.5313,267.5 709.3281,266.9063 Q708.3594,266.4375 707.6719,265.4219 Q707,264.4063 707,263.2031 L707,262.1094 Q707,260.8594 707.5938,259.7656 Q708.2031,258.6719 709.25,258.0938 Q710.3125,257.5 711.5,257.5 Q712.2188,257.5 712.8438,257.75 Q713.4688,258 714,258.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="726" y="266.9102">NavmeshObjectCell</text><line style="stroke:#A80036;stroke-width:1.5;" x1="698" x2="838" y1="278" y2="278"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="43" x="703" y="293.4189">index: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="703" y="307.2549">triangle: Triangle</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="703" y="321.0908">flag: short</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="703" y="334.9268">eventZone: byte</text><!--MD5=[a411bbee3be9aa56fa8c12691dc90263]
+link NavmeshTerrain to NavmeshTerrainCell--><path codeLine="88" d="M143.998,151.107 C132.77,183.505 119.243,222.543 109.248,251.384 " fill="none" id="NavmeshTerrain-to-NavmeshTerrainCell" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="109.1477" x2="114.0866" y1="251.6752" y2="259.234"/><line style="stroke:#A80036;stroke-width:1.0;" x1="109.1477" x2="98.969" y1="251.6752" y2="259.234"/><line style="stroke:#A80036;stroke-width:1.0;" x1="109.1477" x2="106.5278" y1="251.6752" y2="259.234"/><!--MD5=[18aad3f850212b13edab9b4b6bb21521]
+link NavmeshTerrain to NavmeshTerrainTile--><path codeLine="89" d="M186.787,151.131 C203.068,205.41 219.447,286.73 200,355 C194.712,373.565 184.879,392.051 174.578,407.985 " fill="none" id="NavmeshTerrain-to-NavmeshTerrainTile" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="174.576" x2="176.8091" y1="407.9889" y2="414.651"/><line style="stroke:#A80036;stroke-width:1.0;" x1="174.576" x2="163.4849" y1="407.9889" y2="414.651"/><line style="stroke:#A80036;stroke-width:1.0;" x1="174.576" x2="170.147" y1="407.9889" y2="414.651"/><!--MD5=[2d1aa8edc0c6fbc035f19c91a36e0324]
+link NavmeshTerrain to NavmeshEdge--><path codeLine="90" d="M195.481,151.239 C243.99,247.905 339.007,437.248 395.246,549.318 " fill="none" id="NavmeshTerrain-to-NavmeshEdge" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="395.3054" x2="406.044" y1="549.436" y2="556.586"/><line style="stroke:#A80036;stroke-width:1.0;" x1="395.3054" x2="391.744" y1="549.436" y2="556.586"/><line style="stroke:#A80036;stroke-width:1.0;" x1="395.3054" x2="398.894" y1="549.436" y2="556.586"/><!--MD5=[afecb6058965c1ff0ac28943159b77df]
+link NavmeshTerrain to NavmeshObjectInstance--><path codeLine="91" d="M261.621,89.5 C270.621,89.5 279.62,89.5 288.62,89.5 " fill="none" id="NavmeshTerrain-to-NavmeshObjectInstance" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="288.885" x2="296.885" y1="89.5" y2="81.5"/><line style="stroke:#A80036;stroke-width:1.0;" x1="288.885" x2="296.885" y1="89.5" y2="97.5"/><line style="stroke:#A80036;stroke-width:1.0;" x1="288.885" x2="296.885" y1="89.5" y2="89.5"/><!--MD5=[8622324ac878357aeba2e8be1f48c255]
+link NavmeshTerrainCell to NavmeshTerrainTile--><path codeLine="92" d="M103.9096,327.756 C110.063,350.722 118.34,381.617 125.197,407.212 " fill="none" id="NavmeshTerrainCell-to-NavmeshTerrainTile" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="125.2059" x2="135.0035" y1="407.2435" y2="414.971"/><line style="stroke:#A80036;stroke-width:1.0;" x1="125.2059" x2="119.5485" y1="407.2435" y2="414.971"/><line style="stroke:#A80036;stroke-width:1.0;" x1="125.2059" x2="127.276" y1="407.2435" y2="414.971"/><!--MD5=[be996c45f774804fb6b68f64a87f2b62]
+reverse link NavmeshObjectInstance to NavmeshObject--><path codeLine="96" d="M551.019,89.5 C560.124,89.5 569.228,89.5 578.333,89.5 " fill="none" id="NavmeshObjectInstance-backto-NavmeshObject" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="551.018" x2="543.018" y1="89.5" y2="97.5"/><line style="stroke:#A80036;stroke-width:1.0;" x1="551.018" x2="543.018" y1="89.5" y2="81.5"/><line style="stroke:#A80036;stroke-width:1.0;" x1="551.018" x2="543.018" y1="89.5" y2="89.5"/><!--MD5=[2f968cf9049f19f0f30dd7f2f45fc55e]
+link NavmeshObject to NavmeshObjectCell--><path codeLine="97" d="M699.678,144.102 C713.122,173.302 729.713,209.339 743.179,238.587 " fill="none" id="NavmeshObject-to-NavmeshObjectCell" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="743.1854" x2="753.7978" y1="238.6022" y2="245.869"/><line style="stroke:#A80036;stroke-width:1.0;" x1="743.1854" x2="739.2642" y1="238.6022" y2="245.869"/><line style="stroke:#A80036;stroke-width:1.0;" x1="743.1854" x2="746.531" y1="238.6022" y2="245.869"/><!--MD5=[23ac22c351b3a78d7e6280e042fafb1f]
+link NavmeshObject to NavmeshObjectGrid--><path codeLine="98" d="M650.853,144.102 C638.689,171.102 623.893,203.946 611.316,231.864 " fill="none" id="NavmeshObject-NavmeshObjectGrid" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[abb1e23be5f79a5cb03871e7266e3857]
+link NavmeshObject to NavmeshEdge--><path codeLine="99" d="M598.869,144.113 C550.632,178.808 496.033,219.722 489,232 C433.065,329.645 427.572,461.973 431.524,548.748 " fill="none" id="NavmeshObject-to-NavmeshEdge" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5253" x2="439.9112" y1="548.7498" y2="556.74"/><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5253" x2="423.9308" y1="548.7498" y2="556.74"/><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5253" x2="431.921" y1="548.7498" y2="556.74"/><!--MD5=[67935eba6694976e4de9e188bef2bf54]
+link NavmeshObjectGrid to NavmeshObjectGridTile--><path codeLine="100" d="M584,355.178 C584,377.294 584,401.522 584,420.57 " fill="none" id="NavmeshObjectGrid-to-NavmeshObjectGridTile" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="584" x2="592" y1="420.662" y2="428.662"/><line style="stroke:#A80036;stroke-width:1.0;" x1="584" x2="576" y1="420.662" y2="428.662"/><line style="stroke:#A80036;stroke-width:1.0;" x1="584" x2="584" y1="420.662" y2="428.662"/><!--MD5=[3870d7c459fa5cea6b5b5880f4a7a700]
+link NavmeshObjectGridTile to NavmeshEdge--><path codeLine="101" d="M563.368,483.005 C549.233,500.82 529.587,525.583 510.124,550.115 " fill="none" id="NavmeshObjectGridTile-to-NavmeshEdge" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="509.8857" x2="511.1815" y1="550.4135" y2="556.681"/><line style="stroke:#A80036;stroke-width:1.0;" x1="509.8857" x2="498.6465" y1="550.4135" y2="556.681"/><line style="stroke:#A80036;stroke-width:1.0;" x1="509.8857" x2="504.914" y1="550.4135" y2="556.681"/><!--MD5=[e70d04c23206d326f0756839d5942a1b]
+link NavmeshEdge to NavmeshEdgeType--><path codeLine="103" d="M395.56,722.13 C384.066,743.241 372.333,764.7928 363.067,781.8138 " fill="none" id="NavmeshEdge-NavmeshEdgeType" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1eb8954ae477d877cf3a7f2aa27737c9]
+link NavmeshEdge to NavmeshEdgeMeshType--><path codeLine="104" d="M484.44,722.13 C495.934,743.241 507.667,764.7928 516.933,781.8138 " fill="none" id="NavmeshEdge-NavmeshEdgeMeshType" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[57804b9b72f665b88b1a8f042f83fafe]
+@startuml navmesh
+
+hide empty members
+
+class NavmeshTerrain {
+    heights: []float32
+    tiles: []NavmeshTerrainTile
+    cells: []NavmeshTerrainCell
+    globalEdges: []NavmeshEdgeGlobal
+    internalEdges: []NavmeshEdgeInternal
+    objects: []NavmeshObjectInstance
+}
+
+class NavmeshTerrainCell {
+    index: int
+    objects: []NavmeshObjectInstance
+}
+
+class NavmeshTerrainTile {
+    cellIndex: int
+    flag: ushort
+    textureId: short
+}
+
+enum NavmeshEdgeType {
+    GLOBAL
+    INTERNAL
+}
+
+enum NavmeshEdgeMeshType {
+    TERRAIN
+    OBJECT
+}
+
+class NavmeshEdge {
+    type: NavmeshEdgeType
+    meshType: NavmeshEdgeMeshType
+    sourceCellIndex: short
+    destinationCellIndex: short
+    sourceDirection: byte // not set for objects
+    destinationDirection: byte // not set for objects
+    sourceMeshIndex: short // not set for objects
+    destinationMeshIndex: short // not set for objects
+    flag: byte
+}
+
+class NavmeshObject {
+    cells: []NavmeshTerrainCell
+    globalEdges: []NavmeshEdgeGlobal
+    internalEdges: []NavmeshEdgeInternal
+    events: []string
+    grid: NavmeshObjectGrid
+}
+
+class NavmeshObjectInstance {
+    terrain: NavmeshTerrain
+    object: NavmeshObject
+    id: int
+    position: Vector3
+    rotation: Quaternion
+    scale: Vector3
+    localToWorld: Matrix4
+    worldToLocal: Matrix4
+    linkedObjectInstances: []NavmeshObjectInstance
+}
+
+class NavmeshObjectGrid {
+    object: NavmeshObject
+    tiles: []NavmeshObjectGridTile
+    x: float32
+    y: float32
+    width: int // number of X Tiles
+    height: int // number of Z Tiles
+}
+
+class NavmeshObjectGridTile {
+    globalEdges: []NavmeshEdgeGlobal
+}
+
+class NavmeshObjectCell {
+    index: int
+    triangle: Triangle
+    flag: short
+    eventZone: byte
+}
+
+' Terrain
+
+NavmeshTerrain - -{ NavmeshTerrainCell
+NavmeshTerrain - -{ NavmeshTerrainTile
+NavmeshTerrain - -{ NavmeshEdge
+NavmeshTerrain -right-{ NavmeshObjectInstance
+NavmeshTerrainCell - -{ NavmeshTerrainTile
+
+' Object
+
+NavmeshObject -left-{ NavmeshObjectInstance
+NavmeshObject - -{ NavmeshObjectCell
+NavmeshObject - - NavmeshObjectGrid
+NavmeshObject - -{ NavmeshEdge
+NavmeshObjectGrid - -{ NavmeshObjectGridTile
+NavmeshObjectGridTile - -{ NavmeshEdge
+
+NavmeshEdge - - NavmeshEdgeType
+NavmeshEdge - - NavmeshEdgeMeshType
+
+@enduml
+
+@startuml navmesh
+
+hide empty members
+
+class NavmeshTerrain {
+    heights: []float32
+    tiles: []NavmeshTerrainTile
+    cells: []NavmeshTerrainCell
+    globalEdges: []NavmeshEdgeGlobal
+    internalEdges: []NavmeshEdgeInternal
+    objects: []NavmeshObjectInstance
+}
+
+class NavmeshTerrainCell {
+    index: int
+    objects: []NavmeshObjectInstance
+}
+
+class NavmeshTerrainTile {
+    cellIndex: int
+    flag: ushort
+    textureId: short
+}
+
+enum NavmeshEdgeType {
+    GLOBAL
+    INTERNAL
+}
+
+enum NavmeshEdgeMeshType {
+    TERRAIN
+    OBJECT
+}
+
+class NavmeshEdge {
+    type: NavmeshEdgeType
+    meshType: NavmeshEdgeMeshType
+    sourceCellIndex: short
+    destinationCellIndex: short
+    sourceDirection: byte // not set for objects
+    destinationDirection: byte // not set for objects
+    sourceMeshIndex: short // not set for objects
+    destinationMeshIndex: short // not set for objects
+    flag: byte
+}
+
+class NavmeshObject {
+    cells: []NavmeshTerrainCell
+    globalEdges: []NavmeshEdgeGlobal
+    internalEdges: []NavmeshEdgeInternal
+    events: []string
+    grid: NavmeshObjectGrid
+}
+
+class NavmeshObjectInstance {
+    terrain: NavmeshTerrain
+    object: NavmeshObject
+    id: int
+    position: Vector3
+    rotation: Quaternion
+    scale: Vector3
+    localToWorld: Matrix4
+    worldToLocal: Matrix4
+    linkedObjectInstances: []NavmeshObjectInstance
+}
+
+class NavmeshObjectGrid {
+    object: NavmeshObject
+    tiles: []NavmeshObjectGridTile
+    x: float32
+    y: float32
+    width: int // number of X Tiles
+    height: int // number of Z Tiles
+}
+
+class NavmeshObjectGridTile {
+    globalEdges: []NavmeshEdgeGlobal
+}
+
+class NavmeshObjectCell {
+    index: int
+    triangle: Triangle
+    flag: short
+    eventZone: byte
+}
+
+
+NavmeshTerrain - -{ NavmeshTerrainCell
+NavmeshTerrain - -{ NavmeshTerrainTile
+NavmeshTerrain - -{ NavmeshEdge
+NavmeshTerrain -right-{ NavmeshObjectInstance
+NavmeshTerrainCell - -{ NavmeshTerrainTile
+
+
+NavmeshObject -left-{ NavmeshObjectInstance
+NavmeshObject - -{ NavmeshObjectCell
+NavmeshObject - - NavmeshObjectGrid
+NavmeshObject - -{ NavmeshEdge
+NavmeshObjectGrid - -{ NavmeshObjectGridTile
+NavmeshObjectGridTile - -{ NavmeshEdge
+
+NavmeshEdge - - NavmeshEdgeType
+NavmeshEdge - - NavmeshEdgeMeshType
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 14:40:07 CEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: de
+Country: DE
+--></g></svg>
