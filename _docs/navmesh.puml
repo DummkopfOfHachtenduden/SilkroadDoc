@@ -6,8 +6,8 @@ class NavmeshTerrain {
     heights: []float32
     tiles: []NavmeshTerrainTile
     cells: []NavmeshTerrainCell
-    globalEdges: []NavmeshEdgeGlobal
-    internalEdges: []NavmeshEdgeInternal
+    globalEdges: []NavmeshEdge
+    internalEdges: []NavmeshEdge
     objects: []NavmeshObjectInstance
 }
 
@@ -46,8 +46,8 @@ class NavmeshEdge {
 
 class NavmeshObject {
     cells: []NavmeshTerrainCell
-    globalEdges: []NavmeshEdgeGlobal
-    internalEdges: []NavmeshEdgeInternal
+    globalEdges: []NavmeshEdge
+    internalEdges: []NavmeshEdge
     events: []string
     grid: NavmeshObjectGrid
 }
@@ -74,7 +74,7 @@ class NavmeshObjectGrid {
 }
 
 class NavmeshObjectGridTile {
-    globalEdges: []NavmeshEdgeGlobal
+    globalEdges: []NavmeshEdge
 }
 
 class NavmeshObjectCell {
