@@ -1,2 +1,0 @@
-//Encrypted
-//Empty

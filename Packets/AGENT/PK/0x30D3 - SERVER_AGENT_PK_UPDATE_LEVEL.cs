@@ -1,1 +1,0 @@
-2	ushort	TotalPK //also known PKLevel
